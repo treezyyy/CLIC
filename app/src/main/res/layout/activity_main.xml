@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_pink"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/background_text"
+        android:gravity="center"
+        android:background="@drawable/ground"
+
+        android:textSize="50sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#330000"
+        android:textSize="70sp"
+        android:text="@string/text1"/>
+
+    <Button
+        android:id="@+id/marklum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color"
+        android:textColor="@color/background_text"
+        android:onClick="onClickBtnAddDog"
+        android:textSize="50sp"
+        android:text="@string/text2" />
+</androidx.appcompat.widget.LinearLayoutCompat>
