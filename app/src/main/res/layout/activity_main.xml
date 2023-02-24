@@ -10,12 +10,11 @@
 
     <TextView
         android:id="@+id/txt_counter"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:textColor="@color/background_text"
         android:gravity="center"
         android:background="@drawable/ground"
-
         android:textSize="50sp" />
 
 
