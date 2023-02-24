@@ -1,5 +1,6 @@
 package com.example.zz;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("count", count);
         Log.d(TAG, "onSaveInstanceState");
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onRestoreInstanceState");
     }
 
+    @SuppressLint("SetTextI18n")
     private void resetUI() {
         ((TextView) findViewById(R.id.txt_counter)).setText(count.toString());
         Log.d(TAG, "resetUI");
