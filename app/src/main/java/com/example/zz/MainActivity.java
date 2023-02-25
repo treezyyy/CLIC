@@ -2,7 +2,6 @@ package com.example.zz;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.graphics.drawable.ShapeDrawable;
 import android.os.Bundle;
@@ -11,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import org.w3c.dom.Text;
 
 
@@ -25,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState != null &&
+                savedInstanceState.containsKey("count")) {
+            count = savedInstanceState.getInt("count");
+        }
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate");Log.d(TAG, "onCreate");
 
